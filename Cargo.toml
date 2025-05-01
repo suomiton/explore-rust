@@ -1,0 +1,32 @@
+[package]
+name = "rust_basics"
+version = "0.1.0"
+edition = "2024"
+default-run = "rust_basics"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+rand = "0.8"
+chrono = "0.4"
+
+# Examples are organized as separate binary targets
+[[bin]]
+name = "basic_types"
+path = "src/examples/basic_types.rs"
+
+[[bin]]
+name = "ownership"
+path = "src/examples/ownership.rs"
+
+[[bin]]
+name = "structs_enums"
+path = "src/examples/structs_enums.rs"
+
+[[bin]]
+name = "error_handling"
+path = "src/examples/error_handling.rs"
+
+[[bin]]
+name = "concurrency"
+path = "src/examples/concurrency.rs"
